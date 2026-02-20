@@ -338,8 +338,14 @@
       document.querySelectorAll('.nav-links a[data-tab]').forEach(a => a.classList.remove('nav-active'));
       const activeLink = document.querySelector('.nav-links a[data-tab="' + tab + '"]');
       if (activeLink) activeLink.classList.add('nav-active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0 });
     }
+
+    // Support direct links: #privacy, #terms
+    (function() {
+      var hash = window.location.hash.replace('#', '');
+      if (hash === 'privacy' || hash === 'terms') showTab(hash);
+    })();
   </script>
 
 </body>
