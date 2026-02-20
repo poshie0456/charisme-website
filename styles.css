@@ -98,6 +98,19 @@ a:hover {
   color: var(--text-primary);
 }
 
+/* ─── Tabs ─── */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.nav-links a.nav-active {
+  color: var(--purple-light);
+}
+
 /* ─── Layout ─── */
 .container {
   max-width: var(--max-width);
