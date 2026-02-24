@@ -33,16 +33,17 @@
     <h2>1. Information We Collect</h2>
     <p>When you use CharismeAI, we collect:</p>
     <ul>
-      <li>Account information (email address, display name) when you sign up via Google or Apple</li>
-      <li>Screenshots you upload for analysis (stored temporarily for processing)</li>
-      <li>AI-generated responses associated with your account</li>
+      <li>Screenshots and images you manually upload for analysis</li>
+      <li>Text you type into the app (messages, context notes)</li>
+      <li>A unique device identifier (used to track credits; no name or email required)</li>
       <li>Usage data: credits used, features accessed, tone preferences</li>
       <li>Device information: OS version, app version</li>
     </ul>
     <p>We do <strong>NOT</strong> collect:</p>
     <ul>
+      <li>Your name, email address, or any account credentials</li>
       <li>Contacts, location, or browsing history</li>
-      <li>Payment card details (handled entirely by Apple/Google)</li>
+      <li>Payment card details</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
@@ -51,24 +52,28 @@
       <li>Provide AI-powered response generation from your screenshots</li>
       <li>Store your reply history and favourite responses</li>
       <li>Track credit balance and usage</li>
-      <li>Display personalised tone usage statistics</li>
       <li>Improve service quality and fix bugs</li>
-      <li>Send transactional emails (password reset, account verification)</li>
     </ul>
 
-    <h2>3. Third-Party Services</h2>
-    <p>CharismeAI integrates with the following services:</p>
+    <h2>3. Third-Party Services and Data Transmission</h2>
+    <p>When you use AI features (Screenshot Analysis, Conversation Analysis, Generate Reply), your screenshots and typed text are <strong>transmitted in real time</strong> to OpenAI&rsquo;s API for processing. This data leaves your device and is sent to OpenAI servers.</p>
     <ul>
-      <li><strong>Firebase</strong> (authentication, database, file storage) — your data is stored on Google Cloud / Firebase infrastructure with security rules</li>
-      <li><strong>OpenAI (GPT-4o-mini)</strong> — screenshots and conversation text are sent to OpenAI for analysis. OpenAI processes this data per their API data usage policy and does not use API inputs for training</li>
+      <li><strong>OpenAI (GPT-4.1-mini)</strong> — processes screenshots and text to generate reply suggestions. Per OpenAI&rsquo;s API usage policy, data submitted via the API is <strong>not used to train their models</strong></li>
+      <li><strong>Firebase (Google)</strong> — handles anonymous authentication, stores your credit balance and usage history on Google Cloud infrastructure with encryption at rest and in transit</li>
+    </ul>
+    <p>CharismeAI does not retain your screenshots after processing is complete. We do not sell, share, or use your data for advertising.</p>
+
+    <h3>3a. Third-Party Data Protection</h3>
+    <p>OpenAI and Firebase each operate under their own privacy policies and provide data protection standards equivalent to applicable privacy law requirements:</p>
+    <ul>
+      <li><a href="https://openai.com/privacy" target="_blank" rel="noopener">OpenAI Privacy Policy</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google / Firebase Privacy Policy</a></li>
     </ul>
 
     <h2>4. Data Storage &amp; Security</h2>
     <ul>
-      <li>Screenshots are stored in Firebase Cloud Storage (encrypted at rest)</li>
-      <li>Authentication uses industry-standard OAuth 2.0 (Google, Apple)</li>
-      <li>All API communication uses HTTPS/TLS</li>
-      <li>Database access is protected by row-level security policies</li>
+      <li>All API communication uses HTTPS/TLS encryption</li>
+      <li>Database access is protected by security rules</li>
       <li>We do not sell, rent, or share your personal data with third parties for marketing</li>
     </ul>
 
