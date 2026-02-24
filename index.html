@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charisme — AI-Powered Social Media Response Assistant</title>
-  <meta name="description" content="Charisme helps you craft the perfect reply to any social media message. Upload a screenshot, pick a tone, and get AI-generated responses instantly.">
+  <title>CharismeAI — AI-Powered Social Media Response Assistant</title>
+  <meta name="description" content="CharismeAI helps you craft the perfect reply to any social media message. Upload a screenshot, pick a tone, and get AI-generated responses instantly.">
   <meta name="keywords" content="AI reply generator, social media assistant, dating app replies, conversation helper, AI text generator, screenshot reply, charisme app">
-  <meta name="author" content="Charisme">
+  <meta name="author" content="CharismeAI">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Charisme — AI-Powered Social Media Response Assistant">
+  <meta property="og:title" content="CharismeAI — AI-Powered Social Media Response Assistant">
   <meta property="og:description" content="Upload a screenshot, pick a tone, get the perfect reply. 7 tones from Friendly to Spicy.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="logo.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Charisme — AI-Powered Reply Assistant">
+  <meta name="twitter:title" content="CharismeAI — AI-Powered Reply Assistant">
   <meta name="twitter:description" content="Upload a screenshot, pick a tone, get the perfect reply instantly.">
 
   <link rel="icon" type="image/png" href="logo.png">
@@ -28,7 +28,7 @@
   {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
-    "name": "Charisme",
+    "name": "CharismeAI",
     "description": "AI-powered social media response assistant. Upload a screenshot, pick a tone, get the perfect reply.",
     "operatingSystem": "iOS, Android",
     "applicationCategory": "SocialNetworkingApplication",
@@ -45,279 +45,105 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="javascript:void(0)" class="nav-brand" onclick="showTab('home')">
-        <img src="logo.png" alt="Charisme logo" height="32">
-        Charisme
+      <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="CharismeAI logo" height="32">
+        CharismeAI
       </a>
       <ul class="nav-links">
-        <li><a href="javascript:void(0)" data-tab="home" onclick="showTab('home')">Home</a></li>
-        <li><a href="javascript:void(0)" data-tab="privacy" onclick="showTab('privacy')">Privacy</a></li>
-        <li><a href="javascript:void(0)" data-tab="terms" onclick="showTab('terms')">Terms</a></li>
+        <li><a href="index.html" class="nav-active">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ═══ HOME TAB ═══ -->
-  <div id="tab-home" class="tab-content active">
+  <!-- Hero -->
+  <section class="hero">
+    <img src="logo.png" alt="CharismeAI app icon" class="hero-logo" height="80">
+    <h1>Never get <span class="accent">left on read</span> again</h1>
+    <p>Upload a screenshot of any conversation, pick a tone, and let AI craft the perfect reply for you. From friendly to flirty to absolutely unhinged.</p>
+    <div class="hero-cta">
+      <a href="#download" class="btn btn-primary">Download Free</a>
+      <a href="#features" class="btn btn-outline">See Features</a>
+    </div>
+  </section>
 
-    <!-- Hero -->
-    <section class="hero">
-      <img src="logo.png" alt="Charisme app icon" class="hero-logo" height="80">
-      <h1>Never get <span class="accent">left on read</span> again</h1>
-      <p>Upload a screenshot of any conversation, pick a tone, and let AI craft the perfect reply for you. From friendly to flirty to absolutely unhinged.</p>
-      <div class="hero-cta">
-        <a href="#download" class="btn btn-primary">Download Free</a>
-        <a href="#features" class="btn btn-outline">See Features</a>
+  <!-- Features -->
+  <section class="features" id="features">
+    <p class="section-label">Features</p>
+    <h2 class="section-title">Everything you need to reply with confidence</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📸</div>
+        <h3>Screenshot Replies</h3>
+        <p>Upload a screenshot from any app. Our AI reads the conversation and generates tailored responses in your chosen tone.</p>
       </div>
-    </section>
-
-    <!-- Features -->
-    <section class="features" id="features">
-      <p class="section-label">Features</p>
-      <h2 class="section-title">Everything you need to reply with confidence</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">📸</div>
-          <h3>Screenshot Replies</h3>
-          <p>Upload a screenshot from any app. Our AI reads the conversation and generates tailored responses in your chosen tone.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💬</div>
-          <h3>Conversation Analysis</h3>
-          <p>Upload up to 4 screenshots for a full vibe check. Get engagement scores, tips, and warnings about your conversation.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3>Instant Lines</h3>
-          <p>Browse pre-written openers and pickup lines for every situation. Or generate custom AI replies from any message.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎭</div>
-          <h3>7 Unique Tones</h3>
-          <p>Choose from Friendly, Flirty, Spicy, Gen Z, Rude, Poetic, or Hype. Each tone gives you a completely different vibe.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">👤</div>
-          <h3>Profile & Story Analysis</h3>
-          <p>Not just conversations. Analyse dating profiles and stories to generate the perfect opening message or reply.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🌍</div>
-          <h3>Vernacular Modes</h3>
-          <p>Get replies flavoured with South African or British slang. More locales coming soon.</p>
-        </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>Conversation Analysis</h3>
+        <p>Upload up to 4 screenshots for a full vibe check. Get engagement scores, tips, and warnings about your conversation.</p>
       </div>
-    </section>
-
-    <!-- Tones -->
-    <section class="tones">
-      <p class="section-label">Tones</p>
-      <h2 class="section-title">Pick your vibe</h2>
-      <div class="tone-chips">
-        <span class="tone-chip">😊 Friendly</span>
-        <span class="tone-chip">😏 Flirty</span>
-        <span class="tone-chip">🌶️ Spicy</span>
-        <span class="tone-chip">💀 Gen Z</span>
-        <span class="tone-chip">😤 Rude</span>
-        <span class="tone-chip">🎭 Poetic</span>
-        <span class="tone-chip">🔥 Hype</span>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Instant Lines</h3>
+        <p>Browse pre-written openers and pickup lines for every situation. Or generate custom AI replies from any message.</p>
       </div>
-    </section>
-
-    <!-- Download -->
-    <section class="download" id="download">
-      <h2>Ready to level up your replies?</h2>
-      <p>Download Charisme for free on iOS and Android.</p>
-      <div class="store-links">
-        <a href="#" class="btn btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          App Store
-        </a>
-        <a href="#" class="btn btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.73c.44.27.96.31 1.42.1l11.88-6.24-3.18-3.18L3.18 23.73zM.27 2.06C.1 2.42 0 2.82 0 3.27v17.46c0 .45.1.85.27 1.21l10.23-10.2L.27 2.06zm21.54 8.58l-3.58-1.88-3.5 3.24 3.5 3.5 3.58-1.89c.98-.51.98-1.78 0-2.97zM4.8.18L16.68 6.42l-3.18 3.18L3.18.27A1.6 1.6 0 014.8.18z"/></svg>
-          Google Play
-        </a>
+      <div class="feature-card">
+        <div class="feature-icon">🎭</div>
+        <h3>7 Unique Tones</h3>
+        <p>Choose from Friendly, Flirty, Spicy, Gen Z, Rude, Poetic, or Hype. Each tone gives you a completely different vibe.</p>
       </div>
-    </section>
-
-  </div>
-
-  <!-- ═══ PRIVACY TAB ═══ -->
-  <div id="tab-privacy" class="tab-content">
-    <main class="legal">
-      <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: February 2026</p>
-
-      <h2>1. Information We Collect</h2>
-      <p>When you use Charisme, we collect:</p>
-      <ul>
-        <li>Account information (email address, display name) when you sign up via Google or Apple</li>
-        <li>Screenshots you upload for analysis (stored temporarily for processing)</li>
-        <li>AI-generated responses associated with your account</li>
-        <li>Usage data: credits used, features accessed, tone preferences</li>
-        <li>Device information: OS version, app version</li>
-      </ul>
-      <p>We do <strong>NOT</strong> collect:</p>
-      <ul>
-        <li>Contacts, location, or browsing history</li>
-        <li>Payment card details (handled entirely by Apple/Google)</li>
-      </ul>
-
-      <h2>2. How We Use Your Information</h2>
-      <p>We use your information to:</p>
-      <ul>
-        <li>Provide AI-powered response generation from your screenshots</li>
-        <li>Store your reply history and favourite responses</li>
-        <li>Track credit balance and usage</li>
-        <li>Display personalised tone usage statistics</li>
-        <li>Improve service quality and fix bugs</li>
-        <li>Send transactional emails (password reset, account verification)</li>
-      </ul>
-
-      <h2>3. Third-Party Services</h2>
-      <p>Charisme integrates with the following services:</p>
-      <ul>
-        <li><strong>Firebase</strong> (authentication, database, file storage) — your data is stored on Google Cloud / Firebase infrastructure with security rules</li>
-        <li><strong>OpenAI (GPT-4o-mini)</strong> — screenshots and conversation text are sent to OpenAI for analysis. OpenAI processes this data per their API data usage policy and does not use API inputs for training</li>
-        <li><strong>Google AdMob</strong> — free users may see rewarded ads. AdMob may collect device identifiers for ad personalisation. You can opt out via your device ad settings</li>
-        <li><strong>In-App Purchases</strong> — purchases are processed through Apple App Store and Google Play Store. We do not store payment details</li>
-      </ul>
-
-      <h2>4. Data Storage &amp; Security</h2>
-      <ul>
-        <li>Screenshots are stored in Firebase Cloud Storage (encrypted at rest)</li>
-        <li>Authentication uses industry-standard OAuth 2.0 (Google, Apple)</li>
-        <li>All API communication uses HTTPS/TLS</li>
-        <li>Database access is protected by row-level security policies</li>
-        <li>We do not sell, rent, or share your personal data with third parties for marketing</li>
-      </ul>
-
-      <h2>5. Data Retention</h2>
-      <ul>
-        <li>Screenshots and responses: retained while your account is active</li>
-        <li>You can delete individual screenshots from your history at any time</li>
-        <li>Account deletion removes all associated data within 30 days</li>
-      </ul>
-
-      <h2>6. Your Rights</h2>
-      <p>You have the right to:</p>
-      <ul>
-        <li>Access your personal data (Settings &gt; Account)</li>
-        <li>Delete your account and all associated data (Settings &gt; Delete Account)</li>
-        <li>Request a data export by contacting <a href="mailto:tarikpanday20@gmail.com">tarikpanday20@gmail.com</a></li>
-        <li>Opt out of personalised ads via your device settings</li>
-        <li>Withdraw consent at any time by deleting your account</li>
-      </ul>
-
-      <h2>7. Age Requirement</h2>
-      <p>Charisme requires users to be 18 years or older. We do not knowingly collect data from users under 18. If we learn that a user is under 18, we will promptly delete their account.</p>
-
-      <h2>8. Changes to This Policy</h2>
-      <p>We may update this policy from time to time. Material changes will be communicated via in-app notification. Continued use after changes constitutes acceptance.</p>
-
-      <h2>9. Contact</h2>
-      <p>For privacy-related inquiries:</p>
-
-      <div class="support-box">
-        <h3>Get in Touch</h3>
-        <p>Have a question about your data or this policy?</p>
-        <a href="mailto:tarikpanday20@gmail.com" class="btn btn-outline">Email Support</a>
+      <div class="feature-card">
+        <div class="feature-icon">👤</div>
+        <h3>Profile & Story Analysis</h3>
+        <p>Not just conversations. Analyse dating profiles and stories to generate the perfect opening message or reply.</p>
       </div>
-    </main>
-  </div>
-
-  <!-- ═══ TERMS TAB ═══ -->
-  <div id="tab-terms" class="tab-content">
-    <main class="legal">
-      <h1>Terms of Use</h1>
-      <p class="last-updated">Last updated: February 2026</p>
-
-      <h2>1. Acceptance of Terms</h2>
-      <p>By using Charisme, you agree to these Terms of Use. If you do not agree, please do not use the app.</p>
-
-      <h2>2. Service Description</h2>
-      <p>Charisme is an AI-powered assistant that analyses social media screenshots and generates response suggestions in multiple tones (Friendly, Flirty, Spicy, Gen Z, Rude, Poetic, Hype). Features include Screenshot Replies, Instant Lines, and Conversation Analysis.</p>
-
-      <h2>3. Age Requirement</h2>
-      <p>You must be 18 years or older to use Charisme. By creating an account, you confirm that you meet this requirement.</p>
-
-      <h2>4. Credits &amp; Purchases</h2>
-      <ul>
-        <li>All users must sign in with Google or Apple to use the app</li>
-        <li>New users receive free credits on sign-up</li>
-        <li>Free credits can be earned by watching ads, following our social media, and leaving reviews</li>
-        <li>Additional credits can be purchased via in-app purchases</li>
-        <li>Credits are consumable and non-refundable once used</li>
-        <li>Promo codes may be offered for bonus credits; codes are single-use per account</li>
-        <li>All purchases are processed by Apple App Store or Google Play and are subject to their refund policies</li>
-      </ul>
-
-      <h2>5. User Responsibilities</h2>
-      <p>You agree to:</p>
-      <ul>
-        <li>Provide accurate account information</li>
-        <li>Not upload illegal, harmful, or explicit content involving minors</li>
-        <li>Not use the service for harassment, stalking, or malicious purposes</li>
-        <li>Keep your account credentials secure</li>
-        <li>Use generated responses responsibly and at your own discretion</li>
-        <li>Not share or redistribute promo codes obtained through private channels</li>
-      </ul>
-
-      <h2>6. Content Ownership</h2>
-      <ul>
-        <li>You retain ownership of screenshots you upload</li>
-        <li>AI-generated responses are provided for your personal use</li>
-        <li>We do not claim ownership over your content or generated responses</li>
-        <li>You grant us a limited licence to process your screenshots for the purpose of providing the service</li>
-      </ul>
-
-      <h2>7. Acceptable Use</h2>
-      <p>You may not:</p>
-      <ul>
-        <li>Use the service to generate harmful, threatening, or illegal content</li>
-        <li>Upload screenshots containing illegal material</li>
-        <li>Attempt to reverse-engineer the AI systems or extract training data</li>
-        <li>Abuse the service infrastructure (automated requests, scraping)</li>
-        <li>Create multiple accounts to exploit free credits or promo codes</li>
-        <li>Resell or commercially redistribute generated responses</li>
-      </ul>
-
-      <h2>8. AI Disclaimer</h2>
-      <p>AI-generated responses are suggestions only. Charisme does not guarantee the accuracy, appropriateness, or effectiveness of any generated response. You are solely responsible for how you use generated content. We are not liable for any consequences resulting from sending AI-generated messages to others.</p>
-
-      <h2>9. Rewarded Ads</h2>
-      <p>Free users may be shown rewarded video ads. Watching ads is optional but may be required to access certain features without purchasing credits.</p>
-
-      <h2>10. Service Availability</h2>
-      <p>We strive to maintain service availability but do not guarantee uninterrupted access. We may modify, suspend, or discontinue features at any time. Credit balances remain valid regardless of feature changes.</p>
-
-      <h2>11. Account Termination</h2>
-      <p>We reserve the right to suspend or terminate accounts that violate these terms. You may delete your account at any time through Settings. Account deletion is permanent and removes all associated data.</p>
-
-      <h2>12. Limitation of Liability</h2>
-      <p>To the maximum extent permitted by law, Charisme and its operators shall not be liable for any indirect, incidental, or consequential damages arising from your use of the service.</p>
-
-      <h2>13. Changes to Terms</h2>
-      <p>We may update these terms from time to time. Material changes will be communicated via in-app notification. Continued use after changes constitutes acceptance.</p>
-
-      <h2>14. Contact</h2>
-      <p>For questions about these terms:</p>
-
-      <div class="support-box">
-        <h3>Need Help?</h3>
-        <p>Have a question about these terms or need support?</p>
-        <a href="mailto:tarikpanday20@gmail.com" class="btn btn-outline">Email Support</a>
+      <div class="feature-card">
+        <div class="feature-icon">🌍</div>
+        <h3>Vernacular Modes</h3>
+        <p>Get replies flavoured with South African or British slang. More locales coming soon.</p>
       </div>
-    </main>
-  </div>
+    </div>
+  </section>
+
+  <!-- Tones -->
+  <section class="tones">
+    <p class="section-label">Tones</p>
+    <h2 class="section-title">Pick your vibe</h2>
+    <div class="tone-chips">
+      <span class="tone-chip">😊 Friendly</span>
+      <span class="tone-chip">😏 Flirty</span>
+      <span class="tone-chip">🌶️ Spicy</span>
+      <span class="tone-chip">💀 Gen Z</span>
+      <span class="tone-chip">😤 Rude</span>
+      <span class="tone-chip">🎭 Poetic</span>
+      <span class="tone-chip">🔥 Hype</span>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="download" id="download">
+    <h2>Ready to level up your replies?</h2>
+    <p>Download CharismeAI for free on iOS and Android.</p>
+    <div class="store-links">
+      <a href="#" class="btn btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store
+      </a>
+      <a href="#" class="btn btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.73c.44.27.96.31 1.42.1l11.88-6.24-3.18-3.18L3.18 23.73zM.27 2.06C.1 2.42 0 2.82 0 3.27v17.46c0 .45.1.85.27 1.21l10.23-10.2L.27 2.06zm21.54 8.58l-3.58-1.88-3.5 3.24 3.5 3.5 3.58-1.89c.98-.51.98-1.78 0-2.97zM4.8.18L16.68 6.42l-3.18 3.18L3.18.27A1.6 1.6 0 014.8.18z"/></svg>
+        Google Play
+      </a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
-      <span class="footer-copy">&copy; 2026 Charisme. All rights reserved.</span>
+      <span class="footer-copy">&copy; 2026 CharismeAI. All rights reserved.</span>
       <ul class="footer-links">
-        <li><a href="javascript:void(0)" onclick="showTab('privacy')">Privacy Policy</a></li>
-        <li><a href="javascript:void(0)" onclick="showTab('terms')">Terms of Use</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
         <li><a href="mailto:tarikpanday20@gmail.com">Support</a></li>
       </ul>
       <div class="social-links">
@@ -332,19 +158,11 @@
   </footer>
 
   <script>
-    function showTab(tab) {
-      document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-      document.getElementById('tab-' + tab).classList.add('active');
-      document.querySelectorAll('.nav-links a[data-tab]').forEach(a => a.classList.remove('nav-active'));
-      const activeLink = document.querySelector('.nav-links a[data-tab="' + tab + '"]');
-      if (activeLink) activeLink.classList.add('nav-active');
-      window.scrollTo({ top: 0 });
-    }
-
-    // Support direct links: #privacy, #terms
+    // Backward compat: redirect old hash links to separate pages
     (function() {
       var hash = window.location.hash.replace('#', '');
-      if (hash === 'privacy' || hash === 'terms') showTab(hash);
+      if (hash === 'privacy') window.location.href = 'privacy.html';
+      if (hash === 'terms') window.location.href = 'terms.html';
     })();
   </script>
 
