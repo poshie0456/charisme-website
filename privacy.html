@@ -34,76 +34,103 @@
     <p>When you use CharismeAI, we collect:</p>
     <ul>
       <li>Screenshots and images you manually upload for analysis</li>
-      <li>Text you type into the app (messages, context notes)</li>
+      <li>Text you type into the app (messages, context notes, conversation content)</li>
       <li>A unique device identifier (used to track credits; no name or email required)</li>
       <li>Usage data: credits used, features accessed, tone preferences</li>
       <li>Device information: OS version, app version</li>
       <li>Advertising identifiers (IDFA) if you interact with rewarded video ads</li>
       <li>Ad interaction data (impressions, completions) via Google AdMob</li>
+      <li>Purchase transaction data (credit pack purchases) processed by RevenueCat and Apple</li>
     </ul>
     <p>We do <strong>NOT</strong> collect:</p>
     <ul>
       <li>Your name, email address, or any account credentials</li>
       <li>Contacts, location, or browsing history</li>
-      <li>Payment card details</li>
+      <li>Payment card details (all payment processing is handled by Apple via the App Store)</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
     <p>We use your information to:</p>
     <ul>
-      <li>Provide AI-powered response generation from your screenshots</li>
-      <li>Store your reply history and favourite responses</li>
-      <li>Track credit balance, usage, and category unlock purchases</li>
+      <li>Provide AI-powered response generation from your screenshots and text</li>
+      <li>Store your reply history and usage data</li>
+      <li>Track credit balance and usage</li>
+      <li>Serve optional rewarded video ads (via Google AdMob)</li>
       <li>Improve service quality and fix bugs</li>
     </ul>
 
-    <h2>3. Third-Party Services and Data Transmission</h2>
-    <p>When you use AI features (Screenshot Analysis, Conversation Analysis, Generate Reply), your screenshots and typed text are <strong>transmitted in real time</strong> to OpenAI&rsquo;s API for processing. This data leaves your device and is sent to OpenAI servers.</p>
-    <ul>
-      <li><strong>OpenAI (GPT-4.1-mini)</strong> — processes screenshots and text to generate reply suggestions. Per OpenAI&rsquo;s API usage policy, data submitted via the API is <strong>not used to train their models</strong></li>
-      <li><strong>Firebase (Google)</strong> — handles anonymous authentication, stores your credit balance and usage history on Google Cloud infrastructure with encryption at rest and in transit</li>
-      <li><strong>Google AdMob</strong> — serves optional rewarded video ads. May collect device identifiers and ad interaction data for ad serving and measurement. Ad viewing is entirely voluntary</li>
-    </ul>
-    <p>CharismeAI does not retain your screenshots after processing is complete. We do not share screenshots or messages with advertising partners.</p>
+    <h2>3. Third-Party AI Processing &mdash; Anthropic</h2>
+    <p><strong>IMPORTANT:</strong> When you use any AI feature in CharismeAI (Screenshot Analysis, Conversation Analysis, Generate Reply, Instant Lines AI generation), the following personal data is <strong>transmitted from your device to Anthropic PBC</strong>, a third-party AI company:</p>
 
-    <h3>3a. Third-Party Data Protection</h3>
-    <p>OpenAI and Firebase each operate under their own privacy policies and provide data protection standards equivalent to applicable privacy law requirements:</p>
+    <h3>Data sent to Anthropic:</h3>
     <ul>
-      <li><a href="https://openai.com/privacy" target="_blank" rel="noopener">OpenAI Privacy Policy</a></li>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google / Firebase Privacy Policy</a></li>
-      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob / Ads Privacy Policy</a></li>
+      <li>The screenshots and images you upload</li>
+      <li>The text you type (messages, context, conversation content)</li>
+      <li>Your selected tone and mode preferences</li>
     </ul>
 
-    <h2>4. Data Storage &amp; Security</h2>
+    <h3>Who is Anthropic?</h3>
+    <p>Anthropic PBC is the company that makes Claude, the AI model CharismeAI uses to generate reply suggestions. Their servers process your data and return AI-generated responses.</p>
+
+    <h3>How Anthropic uses your data:</h3>
+    <p>Per Anthropic&rsquo;s API usage policy, data submitted via the API is <strong>not used to train their AI models</strong>. Anthropic processes your data solely to return a response to CharismeAI.</p>
+
+    <h3>Retention at Anthropic:</h3>
+    <p>Anthropic may retain API request data for up to 30 days for trust and safety purposes, after which it is deleted. CharismeAI does not retain your screenshots after processing completes.</p>
+
+    <p>By using CharismeAI&rsquo;s AI features, you consent to your data being transmitted to and processed by Anthropic in accordance with their privacy policy: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a></p>
+
+    <h2>4. Firebase (Google) &mdash; Authentication and Storage</h2>
+    <p>Firebase (Google) handles anonymous authentication (no email or name required), and stores your credit balance and anonymous usage history on Google Cloud infrastructure with encryption at rest and in transit. Firebase does not receive your screenshots or message content.</p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google / Firebase Privacy Policy</a></p>
+
+    <h2>5. RevenueCat &mdash; In-App Purchases</h2>
+    <p>CharismeAI offers optional credit pack purchases. Purchase transactions are processed by Apple through the App Store and managed by RevenueCat Inc., a third-party purchase management service.</p>
+    <p>Data shared with RevenueCat:</p>
     <ul>
-      <li>All API communication uses HTTPS/TLS encryption</li>
-      <li>Database access is protected by security rules</li>
+      <li>An anonymous user identifier (your Firebase UID)</li>
+      <li>Purchase receipts and transaction history</li>
+      <li>No personal information (name, email) is shared</li>
+    </ul>
+    <p>RevenueCat uses this data solely to validate purchases and manage entitlements. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></p>
+    <p>All payment processing is handled by Apple. CharismeAI never receives or stores your payment card details.</p>
+
+    <h2>6. Google AdMob &mdash; Advertising</h2>
+    <p>CharismeAI offers optional rewarded video ads powered by Google AdMob. Watching ads is entirely voluntary. If you choose to watch ads, AdMob may collect your device&rsquo;s advertising identifier (IDFA on iOS) and ad interaction data for measurement purposes. We do not show banner, interstitial, or forced ads.</p>
+    <p><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google AdMob Privacy Policy</a></p>
+
+    <h2>7. Data Storage &amp; Security</h2>
+    <ul>
+      <li>All API communication uses HTTPS/TLS encryption in transit</li>
+      <li>Firebase database access is protected by security rules</li>
       <li>We do not sell, rent, or share your personal data with third parties for marketing</li>
+      <li>Screenshots are not stored by CharismeAI after AI processing completes</li>
     </ul>
 
-    <h2>5. Data Retention</h2>
+    <h2>8. Data Retention</h2>
     <ul>
-      <li>Screenshots and responses: retained while your account is active</li>
-      <li>You can delete individual screenshots from your history at any time</li>
-      <li>Account deletion removes all associated data within 30 days</li>
+      <li>Your reply history: retained while your account is active</li>
+      <li>You can delete individual entries from your history at any time</li>
+      <li>Account deletion removes all associated CharismeAI data within 30 days</li>
+      <li>Anthropic may retain API request data for up to 30 days per their policy</li>
     </ul>
 
-    <h2>6. Your Rights</h2>
+    <h2>9. Your Rights</h2>
     <p>You have the right to:</p>
     <ul>
-      <li>Access your personal data (Settings &gt; Account)</li>
+      <li>Review what data we hold (Settings &gt; Account)</li>
       <li>Delete your account and all associated data (Settings &gt; Delete Account)</li>
       <li>Request a data export by contacting <a href="mailto:tarikpanday20@gmail.com">tarikpanday20@gmail.com</a></li>
-      <li>Withdraw consent at any time by deleting your account</li>
+      <li>Withdraw consent at any time by deleting your account and ceasing use</li>
     </ul>
 
-    <h2>7. Age Requirement</h2>
-    <p>CharismeAI requires users to be 18 years or older. We do not knowingly collect data from users under 18. If we learn that a user is under 18, we will promptly delete their account.</p>
+    <h2>10. Age Requirement</h2>
+    <p>CharismeAI is intended for users 18 years of age or older. We do not knowingly collect data from users under 18. If we learn that a user is under 18, we will promptly delete their account and associated data.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this policy from time to time. Material changes will be communicated via in-app notification. Continued use after changes constitutes acceptance.</p>
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Material changes will be communicated via in-app notification. Continued use after changes constitutes acceptance of the updated policy.</p>
 
-    <h2>9. Contact</h2>
+    <h2>12. Contact</h2>
     <p>For privacy-related inquiries:</p>
 
     <div class="support-box">
